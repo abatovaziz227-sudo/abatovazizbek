@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #0f0f1a;
+    transition: background 0.4s, color 0.4s;
+}
+
+body.light {
+    background: #f8f9fa;
+    color: #1a1a2e;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.15);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 15, 26, 0.7);
+    backdrop-filter: blur(12px);
+    z-index: 900;
+    transition: all 0.4s;
+}
+
+body.light .navbar {
+    background: rgba(248, 249, 250, 0.8);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+h1 {
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #00d4ff;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    margin: 0.6rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.primary {
+    background: #00d4ff;
+    color: #0f0f1a;
+}
+
+.primary:hover {
+    background: #00b8e0;
+    transform: translateY(-3px);
+}
+
+.outline {
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+}
+
+.outline:hover {
+    background: #00d4ff;
+    color: #0f0f1a;
+}
+
+section {
+    padding: 8rem 5%;
+}
+
+.dark-section {
+    background: #0a0a14;
+}
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.6rem;
+    margin-top: 3rem;
+}
+
+.skill-card,
+.project-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.35s;
+    border: 1px solid rgba(0, 212, 255, 0.12);
+}
+
+body.light .skill-card,
+body.light .project-card {
+    background: white;
+    border-color: #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
+}
+
+.project-img.placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 1.2rem;
+}
+
+.tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    background: rgba(0, 212, 255, 0.15);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: inherit;
+    font-family: inherit;
+}
+
+body.light input,
+body.light textarea {
+    background: white;
+    border-color: #d1d5db;
+    color: #1a1a2e;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    margin: 0 1.5rem;
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    /* mobil uchun oddiy menyuni keyinroq qo'shsa bo'ladi */
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mening Portfolio Saytim — Abatov</title>
+  <meta name="description" content="Men web dasturchiman. Loyihalar, tajriba va aloqa">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Toggle Dark/Light mode -->
+  <button class="theme-toggle" aria-label="Tema o'zgartirish">🌙</button>
+
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">Abatov</div>
+      <ul class="nav-links">
+        <li><a href="#home">Bosh sahifa</a></li>
+        <li><a href="#about">Men haqimda</a></li>
+        <li><a href="#skills">Ko‘nikmalar</a></li>
+        <li><a href="#projects">Loyihalar</a></li>
+        <li><a href="#contact">Aloqa</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Salom! Men <span class="highlight">Abatov</span></h1>
+      <h2>Frontend / Full-stack dasturchi</h2>
+      <p>Zamonaviy veb-saytlar yarataman va foydalanuvchi tajribasiga e'tibor beraman.</p>
+      <a href="#projects" class="btn primary">Loyihalarimni ko‘rish</a>
+      <a href="#contact" class="btn outline">Bog‘lanish</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>Men haqimda</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>Qoraqolpo'gistonda yashayman.</p>
+          <p>HTML, CSS, JavaScript, React, Tailwind, Node.js va boshqa texnologiyalar bilan ishlayman.</p>
+          <p>Maqsadim — foydalanuvchilar uchun qulay va chiroyli mahsulotlar yaratish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="dark-section">
+      <h2>Mening ko‘nikmalarim</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">JavaScript (ES6+)</div>
+        <div class="skill-card">React & Next.js</div>
+        <div class="skill-card">Tailwind CSS</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Figma / UI/UX asoslari</div>
+        <div class="skill-card">Node.js asoslari</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Loyihalarim</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img placeholder">Loyiha 1</div>
+          <h3>Online do‘kon</h3>
+          <p>React + Tailwind bilan yozilgan to‘liq funksional internet do‘kon.</p>
+          <div class="tags">
+            <span>React</span><span>Tailwind</span><span>Firebase</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img placeholder">Loyiha 2</div>
+          <h3>Portfolio sayti</h3>
+          <p>Siz hozir ko‘rayotgan saytning avvalgi versiyasi 😄</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img placeholder">Loyiha 3</div>
+          <h3>Ob-havo ilovasi</h3>
+          <p>Real vaqtda ob-havo ma’lumotlarini ko‘rsatuvchi SPA.</p>
+          <div class="tags">
+            <span>JavaScript</span><span>API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="dark-section">
+      <h2>Aloqaga chiqing</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" placeholder="Ismingiz" required/>
+        <input type="email" placeholder="Email yoki Telegram @" required/>
+        <textarea placeholder="Xabar..." rows="5" required></textarea>
+        <button type="submit" class="btn primary">Yuborish</button>
+      </form>
+      <p class="or">YOKI</p>
+      <div class="social-links">
+        <a href="https://t.me/abatov" target="_blank">Telegram</a>
+        <a href="https://github.com/abatov" target="_blank">GitHub</a>
+        <a href="mailto:example@email.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Abatov. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
