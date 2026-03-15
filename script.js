@@ -34,3 +34,6 @@ document.getElementById('contact-form') ? .addEventListener('submit', e => {
     alert('Xabaringiz uchun rahmat! Tez orada javob beraman.');
     e.target.reset();
 });
+document.addEventListener("DOMContentLoaded", function(){
+  console.log("1-rus tili video yuklandi");
+});
