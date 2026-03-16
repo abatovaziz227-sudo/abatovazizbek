@@ -307,13 +307,6 @@ footer {
 display:flex;
 gap:40px;
 justify-content:center;
-margin-top:80px;
-}
-
-.cards{
-display:flex;
-gap:40px;
-justify-content:center;
 margin-top:40px;
 flex-wrap:wrap;
 }
