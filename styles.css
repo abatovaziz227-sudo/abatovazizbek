@@ -305,15 +305,16 @@ footer {
 }
 .cards{
 display:flex;
-gap:40px;
+gap:20px;
 justify-content:center;
-margin-top:40px;
 flex-wrap:wrap;
+margin-top:40px;
+padding:0 10px;
 }
 
 .card{
-width:220px;
-height:150px;
+width:250px;
+height:140px;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -321,14 +322,19 @@ font-size:22px;
 font-weight:bold;
 text-decoration:none;
 color:white;
-background:#1e1e1e;
+background:red;
 border-radius:15px;
-border:2px solid #00c8ff;
+border:2px solid darkred;
 transition:0.3s;
 }
 
+.card:hover{
+background:darkred;
+transform:scale(1.05);
+}
+
 /* TELEFON UCHUN */
-@media (max-width: 600px){
+@media (max-width:600px){
 
 .cards{
 flex-direction:column;
