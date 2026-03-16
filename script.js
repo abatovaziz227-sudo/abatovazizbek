@@ -28,3 +28,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const toggle = document.querySelector(".theme-toggle");
+
+toggle.addEventListener("click", () => {
+document.body.classList.toggle("light");
+});
