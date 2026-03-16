@@ -17,4 +17,19 @@ toggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
+// Forma yuborish (hozircha faqat alert)
+document.getElementById('contact-form') ? .addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Xabaringiz uchun rahmat! Tez orada javob beraman.');
+    e.target.reset();
+});
