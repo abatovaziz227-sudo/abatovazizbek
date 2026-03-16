@@ -28,37 +28,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Forma yuborish (hozircha faqat alert)
-document.getElementById('contact-form') ? .addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Xabaringiz uchun rahmat! Tez orada javob beraman.');
-    e.target.reset();
-});
-document.addEventListener("DOMContentLoaded", function(){
-  console.log("1-rus tili video yuklandi");
-});
-function askAI(){
-
-let input = document.getElementById("userInput").value;
-let chat = document.getElementById("chatBox");
-
-chat.innerHTML += "<p><b>Siz:</b> " + input + "</p>";
-
-let answer = "Men rus tili yordamchisiman.";
-
-if(input.includes("salom")){
-answer = "Salom! Sizga rus tili bo'yicha qanday yordam beray?";
-}
-
-if(input.includes("privet")){
-answer = "Privet rus tilida 'salom' degani.";
-}
-
-if(input.includes("rahmat")){
-answer = "Rahmat rus tilida 'spasibo'.";
-}
-
-chat.innerHTML += "<p><b>AI:</b> " + answer + "</p>";
-
-document.getElementById("userInput").value="";
-}
